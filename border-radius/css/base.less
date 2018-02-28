@@ -1,0 +1,125 @@
+@charset "utf-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 14px/1.5 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', '微软雅黑', '宋体', sans-serif;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4,
+h5,
+h6,
+button,
+input,
+textarea {
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #555;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+  &:active {
+    outline: 0;
+  }
+}
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// 属性自定义
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  *zoom: 1;
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.tac {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+// 盒子
+.b-wrapper {
+  box-sizing: border-box;
+  outline: 0;
+  * {
+    box-sizing: border-box;
+    outline: 0;
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      outline: 0;
+    }
+  }
+}
